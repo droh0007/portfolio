@@ -1,0 +1,165 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+	font-size: 15px;
+	line-height: 1.5;
+    background-color: #F2D3D0;
+}
+
+/*adds background colour and centers links*/
+nav {
+    display: flex;
+    background-color: #D96A7E;
+    text-align: center;
+}
+
+/*removes bullets from nav items*/
+nav ul {
+    list-style: none;
+}
+
+/*removes underline from nav items and sets colour*/
+a:link {
+    text-decoration: none;
+    color: #223440;
+  }
+
+  /*changes visited link colour*/
+  a:visited {
+    color: #A0C9D9;
+  }
+
+h2 {
+    text-align: center;
+}
+
+/*wrapper going around home page*/
+.wrapper-home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/*home, about and conact page banner image*/
+#home , #about , #contact {
+    width: 100%;
+    height: auto;
+}
+
+/*add padding*/
+/*home page testemonials centered, width set, text and background colour*/
+.wrapper-testemonial-one , .wrapper-testemonial-two , .wrapper-testemonial-three {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: #223440;
+    color: #D96A7E;
+}
+
+/*home page testemonial images*/
+#test-1 , #test-2 , #test-3 {
+    width: 300px;
+}
+
+/*about page founder centered, width set, text colour and backgrond*/
+.wrapper-founder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    background-color: #223440;
+    color: #D96A7E;
+}
+
+/*about page founder image*/
+#founder {
+    width: 400px;
+}
+
+/*about page designer info centered, width set, text colour an background*/
+.wrapper-designers-one , .wrapper-designers-two , .wrapper-designers-three {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: #A0C9D9;
+    color: #223440;
+}
+
+/*about page designer images width set*/
+#wrapper-designers-one , #wrapper-designers-two , #wrapper-designers-three {
+    width: 300px;
+} 
+
+/*wrapper going around contact page*/
+.wrapper-contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*contact page: adds styling, colour and size of icons on contact page*/
+.fa-location-dot , .fa-phone , .fa-envelope , .fa-fax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    font-size: 9rem;
+    color: #D96A7E;
+    background-color: #223440;
+    width: 8rem;
+    height: 8rem;
+    margin: 5px;
+}
+
+/*gives spacing between boxes*/
+#urname , #email , #urmessage {
+	width: 75%;
+    background-color: #A0C9D9;
+    border: 2px solid #D96A7E;
+}
+
+/*makes the message box larger*/
+#urmessage {
+	padding-bottom: 100px;
+	padding-left: 0;
+}
+
+#email {
+	margin-left: 25px;
+}
+
+#send {
+	background-color: #E89025;
+    box-shadow: 5px 5px 2px 1px #82D6F4;
+	border: none;
+	padding: 10px 10px;
+	font-size: 1.3rem;
+}
+
+/*sets background colour of footer and text colour*/
+footer {
+    background-color: #6A96A6;
+    color: #F2D3D0;
+}
+
+/*ipad size breakpoint*/
+@media screen and (min-width:760px) {
+
+}
+
+/*desktop breakpoint*/
+@media screen and (min-width:1920px) {
+
+}

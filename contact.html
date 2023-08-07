@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--links fontawesome-->
+    <script src="https://kit.fontawesome.com/09e7dcfaf1.js" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!--wrapper that goes around contact page-->
+    <div class="wrapper-contact">
+        <nav>
+            <ul>
+                <!--insert logo image-->
+                <li>
+                    <img alt="logo" src="images/logo.png">
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><input id="search" type="text" 
+                placeholder="Search"><button type="submit">
+                <i id="search-button" class="fa-solid fa-magnifying-glass"></i></button></li>
+            </ul>
+        </nav>
+
+            <img id="contact"
+            srcset="images/contact-430.png 430w,
+                    images/contact-728.png 728w,
+                    images/contact-1833.png 1833w"
+            sizes="(max-width: 430px) 430px,
+                    (max-width: 728px) 728px,
+                    100vw"
+            src="images/contact-728.png"
+            alt="banner image for the contact page of pink office supplies"> 
+
+        <h2>Contact Us</h2>
+        <div class="icons">
+            <div class="wrapper-phone">
+                <i class="fa-solid fa-phone"></i>
+                <h2>Phone</h2>
+            </div>
+
+            <div class="wrapper-email">
+            <i class="fa-solid fa-envelope"></i>
+            <h2>Email</h2>
+            </div>
+
+            <div class="wrapper-fax">
+            <i class="fa-solid fa-fax"></i>
+            <h2>Fax</h2>
+            </div>
+        </div>    
+
+        <h2>Location Finder</h2>
+        <!--add size for map-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44851.99117127337!2d-75.79042869211396!3d45.36396114712807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680265197924!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Send Us A Message</h2>
+        <div class="wrapper-message">
+            <div class="contact">
+                <!--aria role added to form for accessability-->
+                <div class="form" role="form">
+                    <div>
+                        <input id="urname" name="yourname"
+                        type="text" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <input id="email" name="youremail"
+                        type="text" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea id="urmessage" name="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                    <button id="send" type="submit">Send </button>
+            </div> 
+        </div>    
+
+        <footer>
+            <p>
+                Hiring Contact: 613-555-5555<br>
+                legal Address: 512 Stella Street<br>
+                Support Email: KateCreates.com<br>
+                &copy; Copyright Kate Creates, 2023
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
