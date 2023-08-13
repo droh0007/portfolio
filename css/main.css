@@ -47,6 +47,7 @@ h2 {
     height: auto;
 }
 
+/*home, wrapper for project examples, centers and adds padding*/
 .wrapper-ex {
     margin-left:auto;
     margin-right: auto;
@@ -54,6 +55,7 @@ h2 {
     padding-right: 100px;
 }
 
+/*home, max size for project example images*/ 
 #ex-1 , #ex-2 , #ex-3 {
     max-width: 100%;
 }
