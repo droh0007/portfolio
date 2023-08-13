@@ -37,10 +37,20 @@
         alt="banner image for the home page of pink office supplies">    
 
         <h2>Our Past Projects</h2>
-            <div class="projects">
+<!--            <div class="projects">
                 <img id="ex-1"
                 src="images/ex-one.png"
-                alt="image of winter wheelytracks webpage">
+                alt="image of winter wheelytracks webpage"> -->
+
+                <img id="ex-1"
+                srcset="images/ex-one-340.png 340w,
+                        images/ex-one-565.png 565w,"
+                sizes="(max-width: 340px) 340px,
+                       (max-width: 565px) 565px,
+                       100vw"
+                src="images/ex-one.png"
+                alt="Image of winter wheelytracks">   
+
                 <img id="ex-2"
                 src="images/ex-two.png"
                 alt="image of webpage for kate creates">
@@ -77,7 +87,6 @@
             legal Address: 512 Stella Street<br>
             Support Email: KateCreates.com<br>
             &copy; Copyright Kate Creates, 2023
-            test test
             </p>
         </footer>
     </div>
