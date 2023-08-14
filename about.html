@@ -8,97 +8,118 @@
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <nav>
-        <input type="checkbox" id="toggle">
-        <label class="menu-btn" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <ul class="menu">
-            <li>
-                <img alt="logo" src="images/logo.png">
-            </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper-home" itemscope itemtype="http://schema.org/WebPage"> <!--schema added-->
+        <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!--aria role and schema added-->
+            <input type="checkbox" id="toggle">
+            <label class="menu-btn" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                <li>
+                    <img alt="logo" src="images/logo.png">
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
 
-    <!--banner image has image optimization-->
-        <img id="about"
-        srcset="images/about-430.png 430w,
-                images/about-728.png 728w,
-                images/about-1833.png 1833w"
-        sizes="(max-width: 430px) 430px,
-               (max-width: 728px) 728px,
-               100vw"
-        src="images/about-728.png"
-        alt="banner image for the about page of pink office supplies">    
+        <!--banner image has image optimization-->
+            <img id="about"
+            srcset="images/about-430.png 430w,
+                    images/about-728.png 728w,
+                    images/about-1833.png 1833w"
+            sizes="(max-width: 430px) 430px,
+                    (max-width: 728px) 728px,
+                    100vw"
+            src="images/about-728.png"
+            alt="banner image for the about page of pink office supplies"
+            role="img"
+            itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--aria roles and schema added-->
 
-    <!--founder image has image optimization-->
-    <h2>About the Founder</h2>
-    <div class="wrapper-founder">
-        <img id="founder"
-        srcset="images/founder-370.png 370w,
-        images/founder-640.png 640w"
-        sizes="(max-width: 370px) 370px,
-        (max-width: 640px) 640px,
-        100vw"
-        src="images/founder.png"
-        alt="image of founder kate drohan">
-        <p>Founder and CEO of KateCreates is none other than Kate Drohan herself. At just 27 her journey begun at Algonquin College, where she was inspired by the many facets of the curriculum. From Web Development, UX Design, Photography and so much more, Kate wanted to found a company that did it all.  </p>
-    </div>   
+        <!--founder image has image optimization-->
+        <h2>About the Founder</h2>
+        <div class="wrapper-founder" itemscope itemtype="http://schema.org/Person"> <!--schema added-->
+            <img id="founder"
+            srcset="images/founder-370.png 370w,
+            images/founder-640.png 640w"
+            sizes="(max-width: 370px) 370px,
+            (max-width: 640px) 640px,
+            100vw"
+            src="images/founder.png"
+            alt="image of founder kate drohan"
+            role="img"
+            itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--aria roles and schema added-->
+            <article role="article" itemscope itemtype="http://schema.org/Article"> <!--aria role and schema added-->
+                <p>Founder and CEO of KateCreates is none other than Kate Drohan herself. At just 27 her journey begun at Algonquin College, where she was inspired by the many facets of the curriculum. From Web Development, UX Design, Photography and so much more, Kate wanted to found a company that did it all.</p>
+            </article>
+        </div>   
 
-    <!--designer images have image optimization-->
-    <h2>Meet Our Designers</h2>
-    <div class="wrapper-designers-one">
-        <img id="wrapper-designers-one"
-        srcset="images/designer-one-365.png 365w,
-        images/designer-one-450.png 450w"
-        sizes="(max-width: 365px) 365px,
-        (max-width: 365px) 365px,
-        100vw"
-        src="images/designer-one.png"
-        alt="image of designer lillian voorhees">
-        <p>Lillian Voorhees is young content creator that has taken her passion for YouTube from a hobby to a career with her photography and videography.</p>
-    </div>
+        <!--designer images have image optimization-->
+        <h2>Meet Our Designers</h2>
+
+        <div class="wrapper-designers-one" itemscope itemtype="http://schema.org/Person"> <!--aria roles and schema added-->
+            <img id="wrapper-designers-one"
+            srcset="images/designer-one-365.png 365w,
+            images/designer-one-450.png 450w"
+            sizes="(max-width: 365px) 365px,
+            (max-width: 365px) 365px,
+            100vw"
+            src="images/designer-one.png"
+            alt="image of designer lillian voorhees"
+            role="img"
+            itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--aria role and schema added-->
+            <article role="article" itemscope itemtype="http://schema.org/Article"> <!--aria role and schema added-->
+                <p>Lillian Voorhees is young content creator that has taken her passion for YouTube from a hobby to a career with her photography and videography.</p>
+            </article>
+        </div>
     
-    <div class="wrapper-designers-two">
-        <img id="wrapper-designers-two"
-        srcset="images/designer-two-365.png 365w,
-        images/designer-two-450.png 450w"
-        sizes="(max-width: 365px) 365px,
-        (max-width: 365px) 365px,
-        100vw"
-        src="images/designer-two.png"
-        alt="image of designer mark owens">
-        <p>Mark has always been fascinated by the different ways that people use technology and navigate the internet. His unique style of UX design work takes on a great deal of phycology from his first degree.   </p>
-    </div>
+        <div class="wrapper-designers-two" itemscope itemtype="http://schema.org/Person"> <!--schema added-->
+            <img id="wrapper-designers-two"
+            srcset="images/designer-two-365.png 365w,
+            images/designer-two-450.png 450w"
+            sizes="(max-width: 365px) 365px,
+            (max-width: 365px) 365px,
+            100vw"
+            src="images/designer-two.png"
+            alt="image of designer mark owens"
+            role="img"
+            itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--aria role and schema added-->
+            <article role="article" itemscope itemtype="http://schema.org/Article"> <!--aria role and schema added-->
+                <p>Mark has always been fascinated by the different ways that people use technology and navigate the internet. His unique style of UX design work takes on a great deal of phycology from his first degree.   </p>
+            </article>
+        </div>
     
-    <div class="wrapper-designers-three">
-        <img id="wrapper-designers-three"
-        srcset="images/designer-three-365.png 365w,
-        images/designer-three-450.png 450w"
-        sizes="(max-width: 365px) 365px,
-        (max-width: 365px) 365px,
-        100vw"
-        src="images/designer-three.png"
-        alt="image of designer tammy charles">
-        <p>Tammy started out her web development journey through the lens of game development. Trying to find ways to keep users engaged and trying to work in gamification where she can.</p>
-    </div>
+        <div class="wrapper-designers-three" itemscope itemtype="http://schema.org/Person"> <!--schema added-->
+            <img id="wrapper-designers-three"
+            srcset="images/designer-three-365.png 365w,
+            images/designer-three-450.png 450w"
+            sizes="(max-width: 365px) 365px,
+            (max-width: 365px) 365px,
+            100vw"
+            src="images/designer-three.png"
+            alt="image of designer tammy charles"
+            role="img"
+            itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--aria role and schema added-->
+            <article role="article" itemscope itemtype="http://schema.org/Article"> <!--aria role and added--> 
+                <p>Tammy started out her web development journey through the lens of game development. Trying to find ways to keep users engaged and trying to work in gamification where she can.</p>
+            </article>
+        </div>
 
-    <footer>
-        <p>
-            Hiring Contact: 613-555-5555<br>
-            legal Address: 512 Stella Street<br>
-            Support Email: KateCreates.com<br>
-            &copy; Copyright Kate Creates, 2023
-        </p>
-    </footer>
-    <a id="main-content" class="hidden" aria-hidden="true"></a>
+        <footer role="footer" itemscope itemtype="http://schema.org/CreativeWork"> <!--aria role and schema added-->
+            <p>
+                Hiring Contact: 613-555-5555<br>
+                legal Address: 512 Stella Street<br>
+                Support Email: KateCreates.com<br>
+                &copy; Copyright Kate Creates, 2023
+            </p>
+        </footer>
+        <a id="main-content" class="hidden" aria-hidden="true"></a>
+    </div>
 </body>
 </html>
