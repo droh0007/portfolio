@@ -11,8 +11,8 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <!--wrapper that goes around contact page-->
-    <div class="wrapper-contact">
-        <nav>
+    <div class="wrapper-contact" itemscope itemtype="http://schema.org/WebPage"> <!--schema added-->
+        <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!--aria roles and schema added-->
             <input type="checkbox" id="toggle">
             <label class="menu-btn" for="toggle">
                 <span class="bar"></span>
@@ -41,33 +41,35 @@
                     (max-width: 728px) 728px,
                     100vw"
             src="images/contact-728.png"
-            alt="banner image for the contact page of pink office supplies"> 
+            alt="banner image for the contact page of pink office supplies"
+            role="img"
+            itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--aria roles and schema added--> 
 
         <h2>Contact Us</h2>
         <div class="icons">
-            <div class="wrapper-phone">
+            <div class="wrapper-phone" role="contentinfo"> <!--aria role added-->
                 <i class="fa-solid fa-phone"></i>
                 <h2>Phone</h2>
             </div>
 
-            <div class="wrapper-email">
+            <div class="wrapper-email" role="contentinfo"> <!--aria role added-->
             <i class="fa-solid fa-envelope"></i>
             <h2>Email</h2>
             </div>
 
-            <div class="wrapper-fax">
+            <div class="wrapper-fax" role="contentinfo"> <!--aria role added-->
             <i class="fa-solid fa-fax"></i>
             <h2>Fax</h2>
             </div>
         </div>    
 
         <h2>Location Finder</h2>
-        <div class="map-container">
+        <div class="map-container" itemscope itemtype="http://schema.org/Map"> <!--schema added-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44851.99117127337!2d-75.79042869211396!3d45.36396114712807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680265197924!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <h2>Send Us A Message</h2>
-        <div class="wrapper-message">
+        <div class="wrapper-message" itemscope itemtype="http://schema.org/ContactPage"> <!--schema added-->
             <div class="contact">
                 <!--aria role added to form for accessibility-->
                 <div class="form" role="form">
@@ -87,7 +89,7 @@
             </div> 
         </div>
 
-        <footer>
+        <footer role="contentinfo" itemscope itemtype="http://schema.org/CreativeWork">
             <p>
                 Hiring Contact: 613-555-5555<br>
                 legal Address: 512 Stella Street<br>
