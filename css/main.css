@@ -236,6 +236,21 @@ h2 {
     margin: 5px;
 }
 
+.wrapper-phone .info , .wrapper-email .info , .wrapper-fax .info {
+    position: absolute;
+    display: none;
+    background-color: #D96A7E;
+    color: #223440;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.wrapper-phone:hover .info , .wrapper-email:hover .info , .wrapper-fax:hover .info {
+    display: block;
+}
+
 /*contact, centers and adds sizing and padding to map container*/
 .map-container {
     width: 100%;
@@ -319,12 +334,57 @@ footer {
     color: #F2D3D0;
 }
 
+
+.social-icons a:hover {
+    color: #D96A7E;
+}
 /*ipad size breakpoint*/
 @media screen and (min-width:760px) {
 
 }
 
 /*desktop breakpoint*/
-@media screen and (min-width:1920px) {
+@media screen and (min-width: 1000px) {
+    .wrapper-ex,
+    .wrapper-testemonial-one,
+    .wrapper-testemonial-two,
+    .wrapper-testemonial-three {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
+    .wrapper-ex img,
+    .wrapper-testemonial-one img,
+    .wrapper-testemonial-two img,
+    .wrapper-testemonial-three img {
+        max-width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .wrapper-ex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .wrapper-ex img {
+        max-width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    #ex-1, #ex-2, #ex-3 {
+        max-width: 300px;
+    }
 }
+
