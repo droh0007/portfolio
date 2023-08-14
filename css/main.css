@@ -11,6 +11,13 @@ h2 {
     color: #223440;
 }
 
+.skip-link {
+    color: #D96A7E;
+    background-color: #6A96A6;
+    font-size: 2rem;
+    padding: 10px;
+}
+
 /*adds background colour and centers links*/
 nav {
     display: flex;

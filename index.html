@@ -8,8 +8,9 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper-home">
-        <nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a> <!--skip link added-->
+    <div class="wrapper-home" itemscope itemtype="http://schema.org/WebPage"> <!--schema added-->
+        <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!--aria role and schema added--> 
             <input type="checkbox" id="toggle">
             <label class="menu-btn" for="toggle">
                 <span class="bar"></span>
@@ -38,10 +39,11 @@
                (max-width: 728px) 728px,
                100vw"
         src="images/home-728.png"
-        alt="banner image for the home page of pink office supplies">    
+        alt="banner image for the home page of pink office supplies"
+        itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added-->  
 
+        <main id="main-content" role="main"> <!--aria role added-->
         <h2>Our Past Projects</h2>
-
         <!--example images have image optimization-->
             <div class="wrapper-ex">
                 <img id="ex-1"
@@ -51,7 +53,8 @@
                        (max-width: 565px) 565px,
                        100vw"
                 src="images/ex-one.png"
-                alt="Image of winter wheelytracks webpage"> 
+                alt="Image of winter wheelytracks webpage"
+                itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added--> 
                 
                 <img id="ex-2"
                 srcset="images/ex-two-340.png 340w,
@@ -60,7 +63,8 @@
                        (max-width: 565px) 565px,
                        100vw"
                 src="images/ex-two.png"
-                alt="Image of kate creates webpage">
+                alt="Image of kate creates webpage"
+                itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added-->
 
                 <img id="ex-3"
                 srcset="images/ex-three-340.png 340w,
@@ -69,12 +73,13 @@
                        (max-width: 565px) 565px,
                        100vw"
                 src="images/ex-three.png"
-                alt="Image of the united party of cats webpage">
+                alt="Image of the united party of cats webpage"
+                itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added-->
             </div>
 
         <!--testemonial images have image optimization-->
         <h2>Testemonials</h2>
-        <div class="wrapper-testemonial-one">
+        <div class="wrapper-testemonial-one" itemscope itemtype="http://schema.org/Review"> <!--schema added-->
             <div class="test-content">
                 <img id="test-1"
                 srcset="images/testemonials-one-365.png 365w,
@@ -83,12 +88,15 @@
                 (max-width: 450px) 450px,
                 100vw"
                 src="images/testemonials-one.png"
-                alt="image of carol a former client">
-                <p>"I've loved being able to have a one stop-shop for everything I need. I always have so many things on my mind. The KateCreates team has been there for me every step of the way!" </p>
+                alt="image of carol a former client"
+                itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added-->
+                <blockquote role="blockquote"> <!--aria role added-->
+                    <p>"I've loved being able to have a one stop-shop for everything I need. I always have so many things on my mind. The KateCreates team has been there for me every step of the way!" </p>
+                </blockquote>
             </div>
         </div>
 
-        <div class="wrapper-testemonial-two">
+        <div class="wrapper-testemonial-two" itemscope itemtype="http://schema.org/Review"> <!--schema added-->
             <div class="test-content">
                 <img id="test-2"
                 srcset="images/testemonials-two-365.png 365w,
@@ -97,12 +105,15 @@
                 (max-width: 450px) 450px,
                 100vw"
                 src="images/testemonials-two.png"
-                alt="image of tom a former client">
-                <p>"I can't believe the amount of time I've saved trying to find people that could do the job I needed. Sifting through piles of resumes, I'm so glad that's one less thing I need to do now with this team."</p>
+                alt="image of tom a former client"
+                itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added-->
+                <blockquote role="blockquote"> <!--aria role added-->
+                    <p>"I can't believe the amount of time I've saved trying to find people that could do the job I needed. Sifting through piles of resumes, I'm so glad that's one less thing I need to do now with this team."</p>
+                </blockquote>
             </div>
         </div>
 
-        <div class="wrapper-testemonial-three">
+        <div class="wrapper-testemonial-three" itemscope itemtype="http://schema.org/Review"> <!--schema added-->
             <div class="test-content">
                 <img id="test-3"
                 srcset="images/testemonials-three-365.png 365w,
@@ -111,12 +122,16 @@
                 (max-width: 450px) 450px,
                 100vw"
                 src="images/testemonials-three.png"
-                alt="image of sam a former client">
-                <p>"How did they know what I wanted more than I did? That's amazing! I love the work they've done!"</p>
+                alt="image of sam a former client"
+                itemprop="image" itemscope itemtype="http://schema.org/ImageObject"> <!--schema added-->
+                <blockquote role="blockquote"> <!--aria role added-->
+                    <p>"How did they know what I wanted more than I did? That's amazing! I love the work they've done!"</p>
+                </blockquote>
             </div>
         </div>
+        </main>
 
-        <footer>
+        <footer role="footer" itemscope itemtype="http://schema.org/CreativeWork"> <!--aria role and schema added-->
             <p>
             Hiring Contact: 613-555-5555<br>
             legal Address: 512 Stella Street<br>
@@ -125,5 +140,6 @@
             </p>
         </footer>
     </div>
+    <a id="main-content" class="hidden" aria-hidden="true"></a>
 </body>
 </html>
